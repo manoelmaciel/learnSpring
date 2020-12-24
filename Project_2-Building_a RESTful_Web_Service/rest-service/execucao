@@ -1,0 +1,232 @@
+
+
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ls
+build.gradle  gradle  gradlew  gradlew.bat  HELP.md  settings.gradle  src
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ls -la
+total 44
+drwxr-xr-x 4 manoel manoel 4096 dez 24  2020 .
+drwxrwxr-x 5 manoel manoel 4096 dez 24 02:20 ..
+-rw-r--r-- 1 manoel manoel  431 dez 24  2020 build.gradle
+-rw-r--r-- 1 manoel manoel  444 dez 24  2020 .gitignore
+drwxr-xr-x 3 manoel manoel 4096 dez 24  2020 gradle
+-rwxr-xr-x 1 manoel manoel 5766 dez 24  2020 gradlew
+-rw-r--r-- 1 manoel manoel 2763 dez 24  2020 gradlew.bat
+-rw-r--r-- 1 manoel manoel 1240 dez 24  2020 HELP.md
+-rw-r--r-- 1 manoel manoel   34 dez 24  2020 settings.gradle
+drwxr-xr-x 4 manoel manoel 4096 dez 24  2020 src
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+Downloading https://services.gradle.org/distributions/gradle-6.7.1-bin.zip
+.........10%..........20%..........30%..........40%..........50%.........60%..........70%..........80%..........90%..........100%
+
+Welcome to Gradle 6.7.1!
+
+Here are the highlights of this release:
+ - File system watching is ready for production use
+ - Declare the version of Java your build requires
+ - Java 15 support
+
+For more details see https://docs.gradle.org/6.7.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :compileJava
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:16: error: illegal start of expression
+        @GetMapping(/greeting)
+                    ^
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:17: error: illegal start of type
+        public Greeting greetin(@RequestParam(value = "name", defaultValue = "World") , String name) {
+                                                                                      ^
+2 errors
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 2s
+1 actionable task: 1 executed
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:16: error: illegal start of expression
+        @GetMapping(/greeting)
+                    ^
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:17: error: illegal start of type
+        public Greeting greetin(@RequestParam(value = "name", defaultValue = "World"), String name) {
+                                                                                     ^
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ 
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:16: error: illegal start of expression
+        @GetMapping(/greeting)
+                    ^
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:17: error: illegal start of type
+        public Greeting greeting(@RequestParam(value = "name", defaultValue = "World"), String name) {
+                                                                                      ^
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:16: error: illegal start of expression
+        @GetMapping(/greeting)
+                    ^
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:17: error: illegal start of type
+        public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") { String name) {
+                                                                                       ^
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:17: error: ';' expected
+        public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") { String name) {
+                                                                                                    ^
+3 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:16: error: illegal start of expression
+        @GetMapping(/greeting)
+                    ^
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:23: error: class, interface, or enum expected
+}
+^
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:23: error: class, interface, or enum expected
+}
+^
+1 error
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/src/main/java/com/example/restservice/Greeting Controller.java:10: error: class GreetingController is public, should be declared in a file named GreetingController.java
+public class GreetingController {
+       ^
+1 error
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2020-12-24 03:27:12.887  INFO 18784 --- [           main] c.e.restservice.RestServiceApplication   : Starting RestServiceApplication using Java 11.0.9.1 on worknote with PID 18784 (/home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service/build/classes/java/main started by manoel in /home/manoel/Desktop/Java/spring/Building a RESTful Web Service/rest-service)
+2020-12-24 03:27:12.890  INFO 18784 --- [           main] c.e.restservice.RestServiceApplication   : No active profile set, falling back to default profiles: default
+2020-12-24 03:27:13.884  INFO 18784 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-24 03:27:13.892  INFO 18784 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 03:27:13.892  INFO 18784 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-24 03:27:14.004  INFO 18784 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 03:27:14.004  INFO 18784 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1065 ms
+2020-12-24 03:27:14.141  INFO 18784 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 03:27:14.276  INFO 18784 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-24 03:27:14.290  INFO 18784 --- [           main] c.e.restservice.RestServiceApplication   : Started RestServiceApplication in 1.893 seconds (JVM running for 2.316)
+2020-12-24 03:28:25.637  INFO 18784 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-24 03:28:25.638  INFO 18784 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-24 03:28:25.638  INFO 18784 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+<==========---> 80% EXECUTING [7m 2s]
+> :bootRun
+^Cmanoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ 
+
+  24/12/2020 - 03:38 
+
+  NÃO FUNCIONOU ...
+
+  INFELIZMENTE!
+

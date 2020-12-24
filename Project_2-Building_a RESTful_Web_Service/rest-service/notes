@@ -1,0 +1,113 @@
+__________________
+24/12/2020 - 03:38 
+
+  Iniciando  ...
+
+  Anotações!
+  ------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  NÃO FUNCIONOU ...
+
+  INFELIZMENTE!
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+_______
+  06:30
+
+  Tentando ...
+
+  Achar uma solução!
+  ------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  06:34:03 
+
+    Testei o projeto clonado ... Funcionou!
+
+  06:37:13 
+    
+    Agora eu vou substituir o arquivo build.gradle ... Existem algumas diferenças. Não funcionou! 
+
+  06:39:51 
+
+      Troquei a pasta src pela clonada ... Funcionou!
+
+      Agora tem que descobrir o que está diferente ... Dever ser o código!
+
+  07:15:37 
+
+    Vou estudar um pouqueinho ... Pra tentar descobrir!
+
+  07:29:12 
+
+    É incrível ... Mas parece que o código está perfeito. Tudo igualzinho!
+    Agora ... Qual a causa do problema? Fica difícil descobrir!
+
+  07:36:55 
+
+    Retornoi a original ... E dá erro. É foda!
+
+  08:05:26
+
+    Inverti: coloquei o meu código no projeto clonado ... E deu erro. Sem noção!
+
+  ------------------------------------------------------------------------------------------------
+
+      09:57:23 
+
+        DESCOBRI O ERRO ...
+
+          O nome do pacote estava escrito Exemplo em vez de Example.        
+          Digitar o código traz mesmo mais aprendizado. 
+
+        Por mais erros acontecem!
+
+    Mas estou desde as 06:30 batendo cabeça ...
+
+    Felizmente descobri o erro: mais de três horas!
+
+  ------------------------------------------------------------------------------------------------
+  12:39 
+
+  Iniciando  ...
+
+    https://www.codeflow.site/pt/article/spring-boot-change-port
+
+    *2. Usando arquivos de propriedades *
+
+A maneira mais rápida e fácil de personalizar o Spring Boot é substituindo os valores das propriedades padrão.
+
+*Para a porta do servidor, a propriedade que queremos alterar é _server.port _.*
+
+Por padrão, o servidor incorporado inicia na porta 8080. Vamos ver como podemos fornecer um valor diferente em um arquivo application.properties :
+
+server.port=8081
+
+Agora o servidor iniciará na porta 8081.
+
+Da mesma forma, podemos fazer o mesmo se estivermos usando um arquivo application.yml:
+
+server:
+  port : 8081
+
+  Anotações!
+  ------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+__________________
+  
+
+   ...
+
+  !
+  ------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+__________________
+  
+
+   ...
+
+  !
+  ------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
