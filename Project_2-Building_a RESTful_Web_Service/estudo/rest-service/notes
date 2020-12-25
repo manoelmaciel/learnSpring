@@ -1,7 +1,30 @@
+_____________________
+rest-service - estudo
 __________________
 24/12/2020 - 03:38 
 
   Iniciando  ...
+
+    MASTER
+
+  Anotações!
+  ------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+__________________
+25/12/2020 - 17:02   
+
+  Estudando o mecanismo de acesso à Internet ...
+
+  No contexto do Spring MVC!
+  ------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+__________________
+24/12/2020 - 03:38 
+
+  Iniciando ...
+
+    MASTER
 
   Anotações!
   ------------------------------------------------------------------------------------------------
@@ -33,11 +56,11 @@ _______
 
       Troquei a pasta src pela clonada ... Funcionou!
 
-      Agora tem que descobrir o que está diferente ... Dever ser o código!
+      Agora tem que descobrir o que está diferente ... Deve ser no código!
 
   07:15:37 
 
-    Vou estudar um pouqueinho ... Pra tentar descobrir!
+    Vou estudar um pouquinho ... Pra tentar descobrir!
 
   07:29:12 
 
@@ -46,7 +69,7 @@ _______
 
   07:36:55 
 
-    Retornoi a original ... E dá erro. É foda!
+    Retornei a original ... E dá erro. É foda!
 
   08:05:26
 
@@ -61,7 +84,7 @@ _______
           O nome do pacote estava escrito Exemplo em vez de Example.        
           Digitar o código traz mesmo mais aprendizado. 
 
-        Por mais erros acontecem!
+        Por que mais erros acontecem!
 
     Mas estou desde as 06:30 batendo cabeça ...
 
@@ -70,28 +93,28 @@ _______
   ------------------------------------------------------------------------------------------------
   12:39 
 
-  Iniciando  ...
+  Trocando a porta do servidor ...
 
     https://www.codeflow.site/pt/article/spring-boot-change-port
 
     *2. Usando arquivos de propriedades *
 
-A maneira mais rápida e fácil de personalizar o Spring Boot é substituindo os valores das propriedades padrão.
+        A maneira mais rápida e fácil de personalizar o Spring Boot é substituindo os valores das propriedades padrão.
+        
+          *Para a porta do servidor, a propriedade que queremos alterar é _server.port _.*
 
-*Para a porta do servidor, a propriedade que queremos alterar é _server.port _.*
+        Por padrão, o servidor incorporado inicia na porta 8080. Vamos ver como podemos fornecer um valor diferente em um arquivo application.properties :
 
-Por padrão, o servidor incorporado inicia na porta 8080. Vamos ver como podemos fornecer um valor diferente em um arquivo application.properties :
+          server.port=8081
 
-server.port=8081
+        Agora o servidor iniciará na porta 8081.
 
-Agora o servidor iniciará na porta 8081.
+        Da mesma forma, podemos fazer o mesmo se estivermos usando um arquivo application.yml:
 
-Da mesma forma, podemos fazer o mesmo se estivermos usando um arquivo application.yml:
+          server:
+            port : 8081
 
-server:
-  port : 8081
-
-  Anotações!
+  Servidor respondendo na porta: 8081!
   ------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 __________________
