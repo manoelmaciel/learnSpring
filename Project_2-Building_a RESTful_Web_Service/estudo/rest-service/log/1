@@ -1,0 +1,28 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :bootRunMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2020-12-25 16:47:19.210  INFO 26563 --- [           main] c.e.restservice.RestServiceApplication   : Starting RestServiceApplication using Java 11.0.9.1 on worknote with PID 26563 (/home/manoel/Desktop/Java/spring/Estudando-Spring/Project_2-Building_a RESTful_Web_Service/estudo/rest-service/build/classes/java/main started by manoel in /home/manoel/Desktop/Java/spring/Estudando-Spring/Project_2-Building_a RESTful_Web_Service/estudo/rest-service)
+2020-12-25 16:47:19.212  INFO 26563 --- [           main] c.e.restservice.RestServiceApplication   : No active profile set, falling back to default profiles: default
+2020-12-25 16:47:19.852  INFO 26563 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-12-25 16:47:19.862  INFO 26563 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-25 16:47:19.863  INFO 26563 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-25 16:47:19.909  INFO 26563 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-25 16:47:19.909  INFO 26563 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 661 ms
+2020-12-25 16:47:20.036  INFO 26563 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 16:47:20.168  INFO 26563 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-12-25 16:47:20.179  INFO 26563 --- [           main] c.e.restservice.RestServiceApplication   : Started RestServiceApplication in 1.299 seconds (JVM running for 1.566)
+2020-12-25 17:20:50.337  INFO 26563 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-25 17:20:50.338  INFO 26563 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-25 17:20:50.339  INFO 26563 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
