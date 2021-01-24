@@ -1,4 +1,145 @@
+23/01/2021 - 23:29 
 
+manoel@worknote:~/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service$ ls
+build.gradle  build.gradle---BACKUP  build.gradle---CLONADO_NÃO_FUNCIONOU  estudos  execucao  gradle  gradlew  gradlew.bat  notes  settings.gradle  src  src---CLONADA
+manoel@worknote:~/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service$ ./gradlew bootRun
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2021-01-23 21:56:05.463  INFO 26119 --- [           main] c.e.restservice.RestServiceApplication   : Starting RestServiceApplication using Java 11.0.9.1 on worknote with PID 26119 (/home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service/build/classes/java/main started by manoel in /home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service)
+2021-01-23 21:56:05.465  INFO 26119 --- [           main] c.e.restservice.RestServiceApplication   : No active profile set, falling back to default profiles: default
+2021-01-23 21:56:06.988  INFO 26119 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-01-23 21:56:07.010  INFO 26119 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-23 21:56:07.011  INFO 26119 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-23 21:56:07.120  INFO 26119 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-23 21:56:07.120  INFO 26119 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1608 ms
+2021-01-23 21:56:07.292  INFO 26119 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-23 21:56:07.472  INFO 26119 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-01-23 21:56:07.484  INFO 26119 --- [           main] c.e.restservice.RestServiceApplication   : Started RestServiceApplication in 2.89 seconds (JVM running for 4.166)
+2021-01-23 21:56:32.106  INFO 26119 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-23 21:56:32.107  INFO 26119 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-23 21:56:32.108  INFO 26119 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+<==========---> 80% EXECUTING [12m 22s]
+> :bootRun
+^Cmanoel@worknote:~/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service/src/main/java/com/example/restservice/GreetingController.java:23: error: method greeting(String) is already defined in class GreetingController
+        public Greeting greeting(@RequestParam(value = "name", defaultValue = "O mecanismo!") String name) {
+                        ^
+1 error
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service/src/main/java/com/example/restservice/GreetingController.java:23: error: cannot find symbol
+        public Testing testing(@RequestParam(value = "name", defaultValue = "O mecanismo!") String name) {
+               ^
+  symbol:   class Testing
+  location: class GreetingController
+/home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service/src/main/java/com/example/restservice/GreetingController.java:24: error: cannot find symbol
+                return new Testing(counter.incrementAndGet(), String.format(testing, name));            
+                           ^
+  symbol:   class Testing
+  location: class GreetingController
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service$ ./gradlew bootRun
+
+> Task :compileJava FAILED
+/home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service/src/main/java/com/example/restservice/GreetingController.java:23: error: cannot find symbol
+        public Testing testing(@RequestParam(value = "name", defaultValue = "O mecanismo!") String name) {
+               ^
+  symbol:   class Testing
+  location: class GreetingController
+/home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service/src/main/java/com/example/restservice/GreetingController.java:24: error: cannot find symbol
+                return new Testing(counter.incrementAndGet(), String.format(testing, name));            
+                           ^
+  symbol:   class Testing
+  location: class GreetingController
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+manoel@worknote:~/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service$ ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2021-01-23 22:49:38.595  INFO 30368 --- [           main] c.e.restservice.RestServiceApplication   : Starting RestServiceApplication using Java 11.0.9.1 on worknote with PID 30368 (/home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service/build/classes/java/main started by manoel in /home/manoel/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service)
+2021-01-23 22:49:38.597  INFO 30368 --- [           main] c.e.restservice.RestServiceApplication   : No active profile set, falling back to default profiles: default
+2021-01-23 22:49:39.250  INFO 30368 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-01-23 22:49:39.258  INFO 30368 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-23 22:49:39.259  INFO 30368 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-23 22:49:39.306  INFO 30368 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-23 22:49:39.306  INFO 30368 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 670 ms
+2021-01-23 22:49:39.435  INFO 30368 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-23 22:49:39.550  INFO 30368 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-01-23 22:49:39.564  INFO 30368 --- [           main] c.e.restservice.RestServiceApplication   : Started RestServiceApplication in 1.334 seconds (JVM running for 1.655)
+2021-01-23 22:49:59.048  INFO 30368 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-23 22:49:59.049  INFO 30368 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-23 22:49:59.051  INFO 30368 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+<==========---> 80% EXECUTING [34m 46s]
+> :bootRun
+^Cmanoel@worknote:~/Workspaces/Spring/learnSpring/Project_2-Building_a RESTful_Web_Service/rest-service$ 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 manoel@worknote:~/Desktop/Java/spring/Building a RESTful Web Service/rest-service$ ls
 build.gradle  gradle  gradlew  gradlew.bat  HELP.md  settings.gradle  src
