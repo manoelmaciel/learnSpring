@@ -1,1 +1,3 @@
-# Estudando-Spring
+# Estudando ... Spring!
+
+> Recuperando o tempo perdido.
