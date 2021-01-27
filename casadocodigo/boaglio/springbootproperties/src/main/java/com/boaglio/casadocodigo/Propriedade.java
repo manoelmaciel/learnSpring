@@ -1,32 +1,17 @@
 package com.boaglio.casadocodigo;
 
-
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 
 @Entity
 public class Propriedade {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
 	private String nome;
 	private String valor;  
 	private String descricao;
 	private String categoria;
-	private String subcategoria;
 	
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
 	public String getNome() {
 		return nome;
 	}
@@ -59,12 +44,4 @@ public class Propriedade {
 		this.categoria = categoria;
 	}
 	
-	public String getSubcategoria() {
-		return subcategoria;
-	}
-	
-	public void setSubcategoria(String subcategoria) {
-		this.subcategoria = subcategoria;
-	}
-
 }
